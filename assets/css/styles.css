@@ -13,12 +13,49 @@ body {
     color: #fff;
 }
 
-.contenedor-nav {
-    margin: 0;
-    width: 100%;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.slidder-wrap{
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
+.slidder {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 .25rem .5rem #21212126;
+    border-radius: .5rem;
+
+
+}
+
+.slidder img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slidder-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+}
+.slidder-nav a{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: .75;
+    transition: opacity ease 250ms;
+
+}
+
+slidder-nav a:hover{
+    opacity: 100%;
 }

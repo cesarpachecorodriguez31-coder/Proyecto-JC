@@ -8,11 +8,25 @@ body {
     font-family: "Times new roman", Times, serif;
 }
 
-.barradenavegacion {
-    background-color: #333;
-    color: #fff;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #efefe3;
+}
+nav {
+    display: flex;
+    gap: 2rem;
+}
+nav a {
+    color: rgb(17, 13, 13);
+    text-decoration: none;
 }
 
+.logo img {
+    width: 200px;
+}
 .slidder-wrap{
     position: relative;
     max-width: 960px;

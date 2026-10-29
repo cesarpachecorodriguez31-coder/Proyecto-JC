@@ -15,6 +15,10 @@
             <span> Construcciones <strong> &amp; Inmobiliaria</strong></span> </strong></span>
         </a>
 
+        <button class="boton-menu" id="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+            ☰ <span>Menú</span>
+        </button>
+
         <nav class="barradenavegacion" aria-label="Navegación principal">
 
             <a href="#inicio">Inicio</a>
@@ -25,20 +29,15 @@
 
         </nav>
 
-
     </header>
 
+
     <main>
-        <section class="portada" id="inicio" aria-label="Sección de portada">
-
-
-            <div class="slidder">
-
-                <article class="slide" id="slideitem1">
-
-
-                    <img id="imagen1" src="assets/img/imagen-1.jpg" alt="">
-                    <div class="slider-text">
+        <section class="portada" id="inicio" aria-label="Presentacion">
+            <div class="slider">
+                <article class="slide" id="slide1">
+                    <img id="imagen1" src="assets/img/imagen-1.jpg" alt="Proyecto de construcción en progreso">
+                    <div class="texto-slide">
                         <p class="etiqueta"> Construimos tus ideas</p>
                         <h1>Hacemos realidad tus proyectos</h1>
                         <p>Soluciones de construccion e inmobiliaria pensadas para ti</p>
@@ -46,10 +45,9 @@
                     </div>
                 </article>
 
-                <article class="slide" id="slideitem2">
-
-                    <img id="imagen2" src="assets/img/imagen-2.jpg" alt="">
-                    <div class="slider-text">
+                <article class="slide" id="slide2">
+                    <img id="imagen2" src="assets/img/imagen-2.jpg" alt="Bienes raíces">
+                    <div class="texto-slide">
                         <p class="etiqueta">Bienes raíces</p>
                         <h2>Encuentra el lugar ideal</h2>
                         <p>Te acompañamos en la compra, venta o búsqueda de tu propiedad.</p>
@@ -57,9 +55,9 @@
                     </div>
                 </article>
 
-                <article class="slide" id="slideitem3">
-                    <img id="imagen3" src="assets/img/imagen-3.jpg" alt="">
-                    <div class="slider-text">
+                <article class="slide" id="slide3">
+                    <img id="imagen3" src="assets/img/imagen-3.jpg" alt="Asesoría profesional">
+                    <div class="texto-slide">
                         <p class="etiqueta">Asesoría profesional</p>
                         <h2>Decisiones con confianza</h2>
                         <p>Orientación cercana durante cada etapa de tu proyecto.</p>
@@ -67,11 +65,11 @@
                     </div>
                 </article>
 
-                
-                <article class="slide" id="slideitem4">
-                    <img id="imagen4" src="assets/img/imagen-4.png" alt="">
-                    <div class="slider-text">
-                         <p class="etiqueta">Diseño y construcción</p>
+
+                <article class="slide" id="slide4">
+                    <img id="imagen4" src="assets/img/imagen-4.png" alt="Diseño y construcción">
+                    <div class="texto-slide">
+                        <p class="etiqueta">Diseño y construcción</p>
                         <h2>Calidad en cada detalle</h2>
                         <p>Construcción, remodelación y mantenimiento de espacios.</p>
                         <a class="boton" href="#servicios">Explorar servicios</a>
@@ -79,13 +77,16 @@
                 </article>
 
             </div>
+            <button class="slider-control slider-anterior" id="slider-anterior" type="button"
+                aria-label="Mostrar imagen anterior">‹</button>
+            <button class="slider-control slider-siguiente" id="slider-siguiente" type="button"
+                aria-label="Mostrar imagen siguiente">›</button>
 
-            <div class="slidder-nav">
-                <a href="#slideitem1"></a>
-                <a href="#slideitem2"></a>
-                <a href="#slideitem3"></a>
-                <a href="#slideitem4"></a>
-
+            <div class="slider-nav">
+                <button type="button" data-slide="0" aria-label="Ir a la primera imagen"></button>
+                <button type="button" data-slide="1" aria-label="Ir a la segunda imagen"></button>
+                <button type="button" data-slide="2" aria-label="Ir a la tercera imagen"></button>
+                <button type="button" data-slide="3" aria-label="Ir a la cuarta imagen"></button>
             </div>
 
         </section>

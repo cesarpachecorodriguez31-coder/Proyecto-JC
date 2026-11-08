@@ -198,6 +198,56 @@
             </div>
         </section>
 
+        
+         <section class="seccion contacto" id="contacto">
+            <div class="texto-contacto">
+                <p class="etiqueta">Hablemos</p>
+                <h2>Cuéntanos qué necesitas</h2>
+                <p>¿Tienes un proyecto de construcción o buscas una propiedad? Escríbenos para conversar sobre las opciones.</p>
+                <p><strong>Correo:</strong> contacto@tuempresa.com</p>
+                <p><strong>Teléfono:</strong> +57 300 000 0000</p>
+                <p class="nota">Recuerda reemplazar estos datos por los datos reales de tu empresa.</p>
+            </div>
+
+            <form class="formulario" id="formulario-contacto">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+
+                <label for="servicio">Servicio de interés</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Selecciona una opción</option>
+                    <option>Construcción</option>
+                    <option>Compra o venta de inmueble</option>
+                    <option>Remodelación</option>
+                    <option>Mantenimiento</option>
+                    <option>Otro servicio</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos brevemente tu idea" required></textarea>
+
+                <button class="boton" type="submit">Enviar consulta</button>
+                <p id="mensaje-formulario" class="mensaje-formulario" role="status" aria-live="polite"></p>
+                <p class="nota">Demostración: JavaScript revisa los datos y muestra una confirmación, pero no envía correos reales.</p>
+            </form>
+        </section>
+    </main>
+
+    <button id="volver-arriba" class="volver-arriba" type="button" aria-label="Volver arriba">↑</button>
+
+    <footer class="pie-pagina">
+        <a class="logo logo-pie" href="#inicio">Construcciones <strong>&amp; Inmobiliaria</strong></a>
+        <p>© 2026 Construcciones &amp; Inmobiliaria. Todos los derechos reservados.</p>
+        <a href="#inicio">Volver al inicio ↑</a>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+
     </main>
 
     <footer>

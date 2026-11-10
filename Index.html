@@ -1,52 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Construcciones y Bienes Raices</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Construcciones y Bienes Raíces</title>
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
+
     <header class="encabezado">
         <a class="logo" href="#inicio" aria-label="Ir al inicio">
             <img src="assets/img/logo-empresa.png" alt="Logo de la empresa">
-            <span> Construcciones <strong> &amp; Inmobiliaria</strong></span> </strong></span>
+            <span>Construcciones <strong>&amp; Inmobiliaria</strong></span>
         </a>
 
-        <button class="boton-menu" id="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <button class="boton-menu" id="boton-menu" type="button"
+                aria-expanded="false" aria-controls="menu-principal">
             ☰ <span>Menú</span>
         </button>
-
-        <nav class="barradenavegacion" aria-label="Navegación principal">
-
+        <nav class="barradenavegacion" id="menu-principal" aria-label="Navegación principal">
             <a href="#inicio">Inicio</a>
             <a href="#nosotros">Nosotros</a>
             <a href="#servicios">Servicios</a>
             <a href="#proyectos">Proyectos</a>
             <a href="#contacto">Contacto</a>
-
         </nav>
-
     </header>
 
-
     <main>
-        <section class="portada" id="inicio" aria-label="Presentacion">
+        
+        <section class="portada" id="inicio" aria-label="Presentación">
             <div class="slider">
                 <article class="slide" id="slide1">
-                    <img id="imagen1" src="assets/img/imagen-1.jpg" alt="Proyecto de construcción en progreso">
+                    <img src="assets/img/imagen-1.jpg" alt="Proyecto de construcción">
                     <div class="texto-slide">
-                        <p class="etiqueta"> Construimos tus ideas</p>
+                        <p class="etiqueta">Construimos tus ideas</p>
                         <h1>Hacemos realidad tus proyectos</h1>
-                        <p>Soluciones de construccion e inmobiliaria pensadas para ti</p>
+                        <p>Soluciones de construcción e inmobiliaria pensadas para ti.</p>
                         <a class="boton" href="#servicios">Conoce nuestros servicios</a>
                     </div>
                 </article>
 
                 <article class="slide" id="slide2">
-                    <img id="imagen2" src="assets/img/imagen-2.jpg" alt="Bienes raíces">
+                    <img src="assets/img/imagen-2.jpg" alt="Propiedad disponible">
                     <div class="texto-slide">
                         <p class="etiqueta">Bienes raíces</p>
                         <h2>Encuentra el lugar ideal</h2>
@@ -56,7 +53,7 @@
                 </article>
 
                 <article class="slide" id="slide3">
-                    <img id="imagen3" src="assets/img/imagen-3.jpg" alt="Asesoría profesional">
+                    <img src="assets/img/imagen-3.jpg" alt="Asesoría para proyectos inmobiliarios">
                     <div class="texto-slide">
                         <p class="etiqueta">Asesoría profesional</p>
                         <h2>Decisiones con confianza</h2>
@@ -65,9 +62,8 @@
                     </div>
                 </article>
 
-
                 <article class="slide" id="slide4">
-                    <img id="imagen4" src="assets/img/imagen-4.png" alt="Diseño y construcción">
+                    <img src="assets/img/imagen-4.png" alt="Obra de construcción">
                     <div class="texto-slide">
                         <p class="etiqueta">Diseño y construcción</p>
                         <h2>Calidad en cada detalle</h2>
@@ -75,14 +71,14 @@
                         <a class="boton" href="#servicios">Explorar servicios</a>
                     </div>
                 </article>
-
             </div>
-            <button class="slider-control slider-anterior" id="slider-anterior" type="button"
-                aria-label="Mostrar imagen anterior">‹</button>
-            <button class="slider-control slider-siguiente" id="slider-siguiente" type="button"
-                aria-label="Mostrar imagen siguiente">›</button>
 
-            <div class="slider-nav">
+            <button class="slider-control slider-anterior" id="slider-anterior" type="button"
+                    aria-label="Mostrar imagen anterior">‹</button>
+            <button class="slider-control slider-siguiente" id="slider-siguiente" type="button"
+                    aria-label="Mostrar imagen siguiente">›</button>
+
+            <div class="slider-nav" aria-label="Elegir imagen de portada">
                 <button type="button" data-slide="0" aria-label="Mostrar imagen 1" class="activo"></button>
                 <button type="button" data-slide="1" aria-label="Mostrar imagen 2"></button>
                 <button type="button" data-slide="2" aria-label="Mostrar imagen 3"></button>
@@ -94,10 +90,8 @@
             <div class="texto-nosotros">
                 <p class="etiqueta">Quiénes somos</p>
                 <h2>Te acompañamos desde la idea hasta el resultado</h2>
-                <p>Somos una empresa enfocada en ofrecer soluciones para proyectos de construcción y necesidades
-                    inmobiliarias. Trabajamos con responsabilidad, comunicación clara y atención a los detalles.</p>
-                <p>Nuestro objetivo es ayudarte a encontrar, mejorar o construir un espacio que se adapte a tus
-                    necesidades.</p>
+                <p>Somos una empresa enfocada en ofrecer soluciones para proyectos de construcción y necesidades inmobiliarias. Trabajamos con responsabilidad, comunicación clara y atención a los detalles.</p>
+                <p>Nuestro objetivo es ayudarte a encontrar, mejorar o construir un espacio que se adapte a tus necesidades.</p>
                 <a class="boton boton-oscuro" href="#contacto">Hablemos de tu proyecto</a>
             </div>
             <div class="caja-destacada">
@@ -107,43 +101,41 @@
             </div>
         </section>
 
+        
         <section class="seccion fondo-claro" id="servicios">
             <div class="titulo-seccion">
                 <p class="etiqueta">Lo que hacemos</p>
                 <h2>Nuestros servicios</h2>
                 <p>Encuentra en un solo lugar apoyo para tus proyectos y propiedades.</p>
             </div>
+
             <div class="rejilla-servicios">
                 <article class="tarjeta">
                     <span class="icono" aria-hidden="true">🏗️</span>
                     <h3>Construcción</h3>
                     <p>Apoyo en la ejecución de obras nuevas, desde la planeación hasta los acabados.</p>
-                    <p class="detalle-servicio" hidden>Podemos ayudarte a organizar las etapas iniciales de una obra y
-                        revisar las necesidades de tu proyecto.</p>
+                    <p class="detalle-servicio" hidden>Podemos ayudarte a organizar las etapas iniciales de una obra y revisar las necesidades de tu proyecto.</p>
                     <button class="boton boton-detalle" type="button" aria-expanded="false">Más información</button>
                 </article>
                 <article class="tarjeta">
                     <span class="icono" aria-hidden="true">🏠</span>
                     <h3>Compra y venta</h3>
                     <p>Asesoría para buscar, ofrecer o vender casas, apartamentos y otros inmuebles.</p>
-                    <p class="detalle-servicio" hidden>Podemos orientarte para definir qué tipo de inmueble buscas o qué
-                        información preparar para ofrecerlo.</p>
+                    <p class="detalle-servicio" hidden>Podemos orientarte para definir qué tipo de inmueble buscas o qué información preparar para ofrecerlo.</p>
                     <button class="boton boton-detalle" type="button" aria-expanded="false">Más información</button>
                 </article>
                 <article class="tarjeta">
                     <span class="icono" aria-hidden="true">🛠️</span>
                     <h3>Remodelación</h3>
                     <p>Mejoras para renovar espacios, aprovechar áreas y darles una nueva apariencia.</p>
-                    <p class="detalle-servicio" hidden>Revisamos contigo los cambios que deseas hacer para mejorar la
-                        comodidad y el uso de tus espacios.</p>
+                    <p class="detalle-servicio" hidden>Revisamos contigo los cambios que deseas hacer para mejorar la comodidad y el uso de tus espacios.</p>
                     <button class="boton boton-detalle" type="button" aria-expanded="false">Más información</button>
                 </article>
                 <article class="tarjeta">
                     <span class="icono" aria-hidden="true">📐</span>
                     <h3>Diseño y asesoría</h3>
                     <p>Orientación inicial para organizar ideas, definir necesidades y planear tu proyecto.</p>
-                    <p class="detalle-servicio" hidden>Te ayudamos a ordenar tus ideas y establecer prioridades antes de
-                        comenzar.</p>
+                    <p class="detalle-servicio" hidden>Te ayudamos a ordenar tus ideas y establecer prioridades antes de comenzar.</p>
                     <button class="boton boton-detalle" type="button" aria-expanded="false">Más información</button>
                 </article>
                 <article class="tarjeta">
@@ -162,13 +154,14 @@
                 </article>
             </div>
         </section>
-        <section class ="seccion" id="proyectos">
+
+      
+        <section class="seccion" id="proyectos">
             <div class="titulo-seccion">
                 <p class="etiqueta">Ideas que toman forma</p>
                 <h2>Proyectos y propiedades</h2>
-                <p>Esta seccion puede mostrar obras realizadas o inmuebles disponibles. </p>
+                <p>Esta sección puede mostrar obras realizadas o inmuebles disponibles.</p>
             </div>
-
 
             <div class="rejilla-proyectos">
                 <article class="proyecto">
@@ -199,7 +192,7 @@
         </section>
 
         
-         <section class="seccion contacto" id="contacto">
+        <section class="seccion contacto" id="contacto">
             <div class="texto-contacto">
                 <p class="etiqueta">Hablemos</p>
                 <h2>Cuéntanos qué necesitas</h2>
@@ -231,8 +224,6 @@
 
                 <button class="boton" type="submit">Enviar consulta</button>
                 <p id="mensaje-formulario" class="mensaje-formulario" role="status" aria-live="polite"></p>
-                <p class="nota">Demostración: JavaScript revisa los datos y muestra una confirmación, pero no envía correos reales.</p>
-            </form>
         </section>
     </main>
 
@@ -243,16 +234,5 @@
         <p>© 2026 Construcciones &amp; Inmobiliaria. Todos los derechos reservados.</p>
         <a href="#inicio">Volver al inicio ↑</a>
     </footer>
-    <script src="script.js" defer></script>
+    <script src="assets/script.js" defer></script>
 </body>
-</html>
-
-
-    </main>
-
-    <footer>
-
-    </footer>
-</body>
-
-</html>

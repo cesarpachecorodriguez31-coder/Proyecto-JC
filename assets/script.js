@@ -91,10 +91,69 @@ function configurarCarrusel() {
         });
     });
 
-    // Pausar el cambio automático mientras el cursor está sobre el carrusel.
+    
     slider.addEventListener("mouseenter", detenerCarruselAutomatico);
     slider.addEventListener("mouseleave", iniciarCarruselAutomatico);
 
     mostrarSlide(0);
     iniciarCarruselAutomatico();
+}
+
+function configurarDetallesServicios() {
+    const botones = document.querySelectorAll(".boton-detalle");
+
+    botones.forEach(function (boton) {
+        boton.addEventListener("click", function () {
+            const tarjeta = boton.closest(".tarjeta");
+            const detalle = tarjeta.querySelector(".detalle-servicio");
+            const debeMostrar = detalle.hidden;
+
+            detalle.hidden = !debeMostrar;
+            boton.setAttribute("aria-expanded", debeMostrar);
+            boton.textContent = debeMostrar ? "Mostrar menos" : "Más información";
+        });
+    });
+}
+
+function configurarFormulario() {
+    const formulario = document.getElementById("formulario-contacto");
+    const mensaje = document.getElementById("mensaje-formulario");
+
+    if (!formulario || !mensaje) return;
+
+    formulario.addEventListener("submit", function (evento) {
+        evento.preventDefault(); // Evita recargar la página.
+
+        const nombre = document.getElementById("nombre").value.trim();
+        const correo = document.getElementById("correo").value.trim();
+        const servicio = document.getElementById("servicio").value;
+        const texto = document.getElementById("mensaje").value.trim();
+
+        if (!nombre || !correo || !servicio || !texto) {
+            mensaje.textContent = "Por favor, completa todos los campos antes de continuar.";
+            mensaje.className = "mensaje-formulario error";
+            return;
+        }
+
+        mensaje.textContent = "¡Gracias, " + nombre + "! Los datos se revisaron correctamente. Esta es una demostración: todavía no se envía un correo real.";
+        mensaje.className = "mensaje-formulario exito";
+        formulario.reset();
+    });
+}
+
+function configurarBotonVolverArriba() {
+    const boton = document.getElementById("volver-arriba");
+
+    if (!boton) return;
+
+    window.addEventListener("scroll", function () {
+        boton.classList.toggle("visible", window.scrollY > 350);
+    });
+
+    boton.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
 }

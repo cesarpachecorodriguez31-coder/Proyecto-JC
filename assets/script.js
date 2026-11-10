@@ -44,7 +44,7 @@ function configurarCarrusel() {
     let temporizador;
 
     function mostrarSlide(indice) {
-        // Si llegamos al final, volvemos a la primera imagen y viceversa.
+        
         if (indice >= slides.length) indice = 0;
         if (indice < 0) indice = slides.length - 1;
 
